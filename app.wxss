@@ -16,3 +16,11 @@ page {
 .fr {
   float: right;
 }
+.ad_tips {
+    font-size: 24rpx;
+    line-height: 30rpx;
+    margin-bottom: 10rpx;
+    color: #999;
+    margin-top: 10rpx;
+    text-align: center;
+}

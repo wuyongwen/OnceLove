@@ -57,7 +57,7 @@ Page({
         that.setData({
             painting: {
                 width: 375,
-                height: 598,
+                height: 667,
                 clear: true,
                 views: [
                     
@@ -67,40 +67,48 @@ Page({
                         top: 0,
                         left: 0,
                         width: 375,
-                        height: 598
+                        height: 667
                     }, 
                     {
                         type: 'text',
                         content: that.data.mainInfo.he + ' & ' + that.data.mainInfo.she,
-                        fontSize: 12,
-                        color: '#222',
-                        textAlign: 'left',
-                        top: 159,
-                        left: 85,
+                        fontSize: 20,
+                        color: '#B08B51',
+                        textAlign: 'center',
+                        top: 400,
+                        left: 180,
                         bolder: true,
-                        width: 250,
+                        width: 375,
                         height: 30
                     },
 
-                    {
-                        type: 'text',
-                        content: '长按识别二维码',
-                        fontSize: 12,
-                        color: '#333',
-                        textAlign: 'left',
-                        top: 578,
-                        left: 20,
-                        bolder: true,
-                        width: 100,
-                        height: 20
-                    },
+                    // {
+                    //     type: 'text',
+                    //     content: '长按识别二维码',
+                    //     fontSize: 12,
+                    //     color: '#333',
+                    //     textAlign: 'left',
+                    //     top: 578,
+                    //     left: 20,
+                    //     bolder: true,
+                    //     width: 100,
+                    //     height: 20
+                    // },
                     {
                         type: 'image',
                         url: that.data.mainInfo.qrimg,
-                        top: 468,
-                        left: 10,
+                        top: 430,
+                        left: 137,
                         width: 100,
                         height: 100
+                    },
+                    {
+                        type: 'image',
+                        url: that.data.mainInfo.thumb,
+                        top: 180,
+                        left: 75,
+                        width: 220,
+                        height: 176
                     }
                 ]
             }

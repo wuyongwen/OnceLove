@@ -1,5 +1,7 @@
 <!--pages/chat/index.wxml-->
 <view class="container">
+
+    
     <view wx:if="{{chatNum > 0}}">
         <view class="chat_list" wx:for="{{chatList}}" wx:key="user">
             <view class="chat_face">
@@ -7,8 +9,8 @@
             </view>
             <view class="chat_words">
                 <view class="chat_meta">
-                    <text class="chat_user">{{item.nickname}}</text>
-                    <text class="chat_date">{{item.time}}</text>
+                    <text class="chat_user">{{item.nickname}} </text>
+                    <text class="chat_date fr">{{item.time}}</text>
                 </view>
                 <view>{{item.words}}</view>
             </view>
@@ -16,7 +18,7 @@
     </view>
     <view wx:else>
         <view class="befirst">
-            <image src="/images/lovemail.gif" />``
+            <image src="/images/lovemail.gif" />
         </view>
     </view>
     <view class='btn_area'>
